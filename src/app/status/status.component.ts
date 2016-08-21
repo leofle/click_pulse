@@ -2,7 +2,13 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'status',
-  templateUrl: 'status.component.html',
+  template: `
+  <div class="status_wrapper">
+    <p>
+      status works!
+    </p>
+  </div>
+  `,
   styleUrls: ['status.component.scss']
 })
 export class StatusComponent implements OnInit {
