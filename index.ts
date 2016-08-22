@@ -1,2 +1,2 @@
-export * from './crisis-list';
-export * from './hero-list';
+export * from './status/status.component';
+export * from './availability/availability.component';

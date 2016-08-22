@@ -1,3 +1,45 @@
+$isGood: #64da64;
+$isBad: red;
+
 .status_wrapper {
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  display: flex;
+  align-content: space-between;
+  .inner_status {
+    flex-grow:  1;
+     div {
+      padding: 25px;
+      box-shadow: 1px 3px 18px 1px #ccc;
+      margin: 30px 20px;
+    }
+    .status_container{
+      display:flex;
+      background: #fff;
+      .platform_name {
+        flex-grow: 1;
+      }
+    }
+    .services_container {
+      background: #fff;
+      ul {
+        padding: 0;
+        list-style-type: none;
+        li {
+          display:flex;
+          margin: 10px 0;
+          .service_unit {
+              flex-grow: 1;
+          }
+          .service_unit_status {
+            &.isGood {
+              color: $isGood;
+            }
+            &.isBad {
+              color: $isBad;
+            }
+          }
+        }
+      }
+    }
+  }
 }

@@ -33,6 +33,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeSpeed;
 }
 ol, ul {
 	list-style: none;
@@ -64,6 +66,7 @@ h1 {
 .pulseHeader {
   display: flex;
   align-items: center;
+  margin: 12px 0 -15px 0px;
 
   h2 {
     font-size: 25px;
