@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'status',
@@ -18,21 +19,15 @@ import { Component, OnInit } from '@angular/core';
     </div>
   </div>
   `,
-  styleUrls: ['status.component.scss']
+  styleUrls: ['status.component.scss'],
+  providers: [DataService]
 })
 export class StatusComponent {
 
-    constructor() { }
+  items:Array<any>;
+  constructor(dataService: DataService) {
+    this.items = dataService.getItems();
+  }
 
-  items = [{
-    "name":"Schedule",
-    "status":"good"
-  },{
-    "name":"Mobile",
-    "status":"bad"
-  },{
-    "name":"Integration",
-    "status":"good"
-  }];
 
 }
