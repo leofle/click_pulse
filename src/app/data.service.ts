@@ -11,13 +11,13 @@ export class DataService {
     this.items = [
       {
         "name":"Schedule",
-        "status":"good"
+        "status":"done"
       },{
         "name":"Mobile",
-        "status":"bad"
+        "status":"highlight_off"
       },{
         "name":"Integration",
-        "status":"good"
+        "status":"done"
       }
     ];
   }

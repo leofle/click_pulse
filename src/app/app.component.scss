@@ -1,6 +1,6 @@
 $navigationColor: #507FE8;
 $navigationActive: #E8B950;
-
+$navigationHover: hotpink;
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -83,6 +83,9 @@ h1 {
 			transition: all .3s ease;
       &.active {
         background: $navigationActive;
+      }
+			&:hover {
+        background: $navigationHover;
       }
     }
   }
