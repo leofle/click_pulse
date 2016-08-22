@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { routing, appRoutingProviders } from './app.routing';
 import { AvailabilityComponent } from './availability/availability.component';
 import { StatusComponent } from './status/status.component';
+import { HttpModule }     from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { StatusComponent } from './status/status.component';
     BrowserModule,
     CommonModule,
     FormsModule,
-    routing
+    routing,
+    HttpModule
   ],
   providers: [appRoutingProviders],
   entryComponents: [AppComponent],

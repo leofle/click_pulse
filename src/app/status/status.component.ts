@@ -23,11 +23,19 @@ import { DataService } from '../data.service';
   providers: [DataService]
 })
 export class StatusComponent {
-
+	// getData: string;
+  // items: any;
   items:Array<any>;
-  constructor(dataService: DataService) {
+  constructor(private dataService: DataService) {
     this.items = dataService.getItems();
   }
 
+  // ngOnInit(): void {
+  //   this.dataService.getItems().subscribe(
+  //     data => this.getData = JSON.stringify(data),
+  //     error => alert(error),
+  //     () => console.log(this.getData)
+  //   );
+  // }
 
 }
