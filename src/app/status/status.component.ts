@@ -20,12 +20,9 @@ import { Component, OnInit } from '@angular/core';
   `,
   styleUrls: ['status.component.scss']
 })
-export class StatusComponent implements OnInit {
+export class StatusComponent {
 
     constructor() { }
-
-  ngOnInit() {
-  }
 
   items = [{
     "name":"Schedule",
