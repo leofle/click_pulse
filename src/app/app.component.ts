@@ -6,14 +6,23 @@ import { FooterComponent } from './footer/footer.component';
   template: `
   <div class="app_wrapper">
     <h1>{{title}}</h1>
-    <div class="pulseHeader">
-    <h2>{{sub_title}}</h2>
-    <nav>
-      <a routerLink="/status" routerLinkActive="active">status</a>
-      <a routerLink="/availability" routerLinkActive="active">availability</a>
-    </nav>
-    <i class="material-icons">schedule</i>
-    </div>
+      <div class="pulseHeader">
+      <h2>{{sub_title}}</h2>
+      <nav>
+        <a routerLink="/status" routerLinkActive="active">status</a>
+        <a routerLink="/availability" routerLinkActive="active">availability</a>
+      </nav>
+        <div class="timedate_wrapper">
+          <div class="date_wrapper">
+            <i class="material-icons">today</i>
+            <span class="date_container">{{today | date}}</span>
+          </div>
+          <div class="hour_wrapper">
+            <i class="material-icons">watch_later</i>
+            <span class="hour_container">{{today | date:'shortTime'}}</span>
+          </div>
+        </div>
+      </div>
     <router-outlet></router-outlet>
     <app-footer></app-footer>
   </div>
@@ -23,4 +32,5 @@ import { FooterComponent } from './footer/footer.component';
 export class AppComponent {
   title = 'clicksoftware';
   sub_title = 'ClickPulse';
+  today: number = Date.now();
 }

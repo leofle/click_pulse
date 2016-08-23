@@ -1,6 +1,7 @@
 $navigationColor: #507FE8;
 $navigationActive: #E8B950;
 $navigationHover: hotpink;
+$timeWidgetColor: #929292;
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -23,7 +24,6 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -77,12 +77,14 @@ h1 {
 	background: #fff;
 
   h2 {
+		flex: 1;
     font-size: 20px;
     padding: 20px;
   }
 
   nav {
 		display: flex;
+		flex:5;
 	    a {
 				cursor: pointer;
 	      text-decoration: none;
@@ -99,4 +101,24 @@ h1 {
 	      }
 	    }
   }
+}
+
+.timedate_wrapper {
+	display: flex;
+	flex: 5;
+	justify-content: flex-end;
+	padding: 10px;
+	.date_wrapper, .hour_wrapper {
+		display: flex;
+		align-items: center;
+		.date_container, .hour_container {
+			  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+				padding: 0 15px;
+				color: $timeWidgetColor;
+		}
+		i {
+			font-size: 25px;
+			color: $timeWidgetColor;
+		}
+	}
 }
