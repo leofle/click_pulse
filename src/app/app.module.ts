@@ -7,19 +7,23 @@ import { routing, appRoutingProviders } from './app.routing';
 import { AvailabilityComponent } from './availability/availability.component';
 import { StatusComponent } from './status/status.component';
 import { HttpModule }     from '@angular/http';
+import { MdButtonModule } from '@angular2-material/button';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AvailabilityComponent,
-    StatusComponent
+    StatusComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     CommonModule,
     FormsModule,
     routing,
-    HttpModule
+    HttpModule,
+    MdButtonModule
   ],
   providers: [appRoutingProviders],
   entryComponents: [AppComponent],

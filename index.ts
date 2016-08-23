@@ -1,2 +1,3 @@
-export * from './status/status.component';
 export * from './availability/availability.component';
+export * from './footer';
+export * from './status/status.component';

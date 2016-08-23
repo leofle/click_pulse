@@ -4,24 +4,39 @@ $isBad: red;
 .status_wrapper {
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
   display: flex;
+  flex-flow: row wrap;
   align-content: space-between;
   .inner_status {
     flex-grow:  1;
+    min-width: 300px;
      div {
       padding: 25px;
-      box-shadow: 1px 3px 18px 1px #ccc;
+      -webkit-filter: drop-shadow(#ccc 3px 2px 3px);
+      filter: drop-shadow(#ccc 3px 2px 3px);
       margin: 30px 20px;
     }
     .status_container{
       display:flex;
+      align-items: center;
       background: #fff;
       .platform_name {
         flex-grow: 1;
       }
+      i {
+          font-size: 40px;
+          &.done {
+            color: $isGood;
+          }
+          &.highlight_off {
+            color: $isBad;
+          }
+      }
     }
     .services_container {
+      display: flex;
+      flex-flow: column;
       background: #fff;
-      height: 300px;
+      overflow: hidden;
       ul {
         padding: 0;
         list-style-type: none;
