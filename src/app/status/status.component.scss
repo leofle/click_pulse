@@ -6,6 +6,8 @@ $isBad: red;
   display: flex;
   flex-flow: row wrap;
   align-content: space-between;
+  // min-height: calc(100% - 127px);
+  // margin-bottom: -100px;
   .inner_status {
     flex-grow:  1;
     min-width: 300px;
@@ -57,5 +59,9 @@ $isBad: red;
         }
       }
     }
+  }
+  &:after {
+    content: "";
+    display: block;
   }
 }

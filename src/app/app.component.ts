@@ -9,6 +9,9 @@ import { FooterComponent } from './footer/footer.component';
     <h1>{{title}}</h1>
       <div class="pulseHeader">
       <h2>{{sub_title}}</h2>
+      <span class="logo_container">
+        <i class="material-icons">security</i>
+      </span>
       <nav>
         <a routerLink="/status" routerLinkActive="active">status</a>
         <a routerLink="/availability" routerLinkActive="active">availability</a>

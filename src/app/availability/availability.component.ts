@@ -3,7 +3,9 @@ import { Component } from '@angular/core';
   selector: 'availability',
   template: `
   <div class="availability_wrapper">
-    <p>Here goes availability</p>
+    <div class="inner_availability">
+      <p>Here goes availability</p>
+    </div>
   </div>`,
   styleUrls: ['availability.component.scss']
 })

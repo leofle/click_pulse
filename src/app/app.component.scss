@@ -84,7 +84,7 @@ h1 {
 
   nav {
 		display: flex;
-		flex:5;
+		flex:8;
 	    a {
 				cursor: pointer;
 	      text-decoration: none;
@@ -120,5 +120,13 @@ h1 {
 			font-size: 25px;
 			color: $timeWidgetColor;
 		}
+	}
+}
+
+.logo_container {
+	flex: 1;
+	i {
+		font-size: 30px;
+		color: purple;
 	}
 }

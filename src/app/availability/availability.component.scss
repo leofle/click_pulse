@@ -1,3 +1,15 @@
 .availability_wrapper {
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+  // min-height: calc(100% - 127px);
+  // margin-bottom: -100px;
+
+  .inner_availability {
+    background: #fff;
+    width: calc(100% - 39px);
+    height: 300px;
+    margin: 30px 20px;
+  }
 }
