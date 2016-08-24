@@ -7,9 +7,9 @@ import { FooterComponent } from './footer/footer.component';
   template: `
   <div class="app_wrapper">
     <h1>{{title}}</h1>
-    <app-header></app-header>
+    <pulse-header></pulse-header>
     <router-outlet></router-outlet>
-    <app-footer></app-footer>
+    <pulse-footer></pulse-footer>
   </div>
   `,
   styleUrls: ['app.component.scss']

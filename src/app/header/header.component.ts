@@ -1,7 +1,7 @@
 import { Component, OnInit, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
 
 @Component({
-  selector: 'app-header',
+  selector: 'pulse-header',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
   <div class="pulseHeader">
@@ -30,7 +30,7 @@ import { Component, OnInit, ChangeDetectionStrategy, ChangeDetectorRef } from '@
 export class HeaderComponent implements OnInit {
 
   sub_title = 'ClickPulse';
-  today: number = Date.now();
+  today: number;
 
   constructor(private ref: ChangeDetectorRef) {
       // ref.detach();

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-footer',
+  selector: 'pulse-footer',
   template: `
   <div class="footer_wrapper">
     <p>clicksoftware 2016</p>
