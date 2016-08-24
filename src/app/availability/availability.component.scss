@@ -12,4 +12,17 @@
     height: 300px;
     margin: 30px 20px;
   }
+  .calendar_container {
+    display: flex;
+    align-items: baseline;
+    margin: 15px 30px;
+    .pod_name {
+      width:200px;
+    }
+    .pod_calendar {
+      background: #7cef7c;
+      height: 10px;
+      width: 100%;
+    }
+  }
 }
