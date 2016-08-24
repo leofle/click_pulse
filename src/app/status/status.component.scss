@@ -5,12 +5,13 @@ $isBad: red;
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
   display: flex;
   flex-flow: row wrap;
-  align-content: space-between;
+  justify-content: space-around;
   // min-height: calc(100% - 127px);
   // margin-bottom: -100px;
   .inner_status {
     flex-grow:  1;
     min-width: 300px;
+    max-width: 450px;
      div {
       padding: 25px;
       -webkit-filter: drop-shadow(#ccc 3px 2px 3px);
