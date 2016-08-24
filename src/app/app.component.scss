@@ -130,3 +130,15 @@ h1 {
 		color: purple;
 	}
 }
+
+@media (max-width: 630px) {
+	.pulseHeader {
+		nav {
+			justify-content: center;
+		}
+	}
+	.timedate_wrapper {
+		justify-content: center;
+		margin: 15px 0;
+	}
+}
