@@ -8,6 +8,7 @@ import { AvailabilityComponent } from './availability/availability.component';
 import { StatusComponent } from './status/status.component';
 import { HttpModule }     from '@angular/http';
 import { MdButtonModule } from '@angular2-material/button';
+import { MdCardModule } from '@angular2-material/card';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 
@@ -25,7 +26,8 @@ import { HeaderComponent } from './header/header.component';
     FormsModule,
     routing,
     HttpModule,
-    MdButtonModule
+    MdButtonModule,
+    MdCardModule
   ],
   providers: [appRoutingProviders],
   entryComponents: [AppComponent],

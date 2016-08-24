@@ -2,6 +2,7 @@ $navigationActive: #E8B950;
 $navigationHover: hotpink;
 $timeWidgetColor: #929292;
 $navigationColor: #507FE8;
+$logoColor: #ef6363;
 
 %fontFamily {
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -29,7 +30,7 @@ $navigationColor: #507FE8;
     flex: 1;
     i {
       font-size: 30px;
-      color: purple;
+      color: $logoColor;
     }
   }
 
