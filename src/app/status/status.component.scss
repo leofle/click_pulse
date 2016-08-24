@@ -14,9 +14,14 @@ $isBad: red;
     max-width: 555px;
      div {
       padding: 25px;
-      -webkit-filter: drop-shadow(#ccc 3px 2px 3px);
-      filter: drop-shadow(#ccc 3px 2px 3px);
+      border-right: 2px solid #ccc;
+      border-bottom: 2px solid #ccc;
       margin: 30px 20px;
+      transition: all .3s ease;
+      &:hover {
+        -webkit-filter: drop-shadow(#ccc 3px 2px 3px);
+        filter: drop-shadow(#ccc 3px 2px 3px);
+      }
     }
     .status_container{
       display:flex;
