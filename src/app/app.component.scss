@@ -54,6 +54,7 @@ table {
 .app_wrapper {
 	background: #f1f1f1;
 	height: calc(100vh - 20px);
+	min-width: 340px;
 }
 
 h1 {
@@ -66,4 +67,10 @@ h1 {
   background: $navigationColor;
   color: #fff;
   padding: 10px 20px;
+}
+
+@media (max-width: 772px) {
+	.app_wrapper {
+		height: 100%;
+	}
 }
