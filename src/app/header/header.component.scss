@@ -1,0 +1,95 @@
+$navigationActive: #E8B950;
+$navigationHover: hotpink;
+$timeWidgetColor: #929292;
+$navigationColor: #507FE8;
+
+%fontFamily {
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.pulseHeader {
+  display: flex;
+	flex-flow: row wrap;
+  align-items: center;
+	margin: 12px 20px 12px 20px;
+	background: #fff;
+
+  h2 {
+		flex: 1;
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  h2, a {
+    @extend %fontFamily;
+    font-weight: 300;
+  }
+
+  .logo_container {
+    flex: 1;
+    i {
+      font-size: 30px;
+      color: purple;
+    }
+  }
+
+  nav {
+		display: flex;
+		flex:8;
+	    a {
+				cursor: pointer;
+	      text-decoration: none;
+	      font-size: 20px;
+	      background: $navigationColor;
+	      color: #fff;
+	      padding: 20px;
+				transition: all .3s ease;
+	      &.active {
+	        background: $navigationActive;
+	      }
+				&:hover {
+	        background: $navigationHover;
+	      }
+	    }
+  }
+
+  .timedate_wrapper {
+  	display: flex;
+  	flex: 5;
+  	justify-content: flex-end;
+  	padding: 10px;
+
+  	.date_wrapper, .hour_wrapper {
+  		display: flex;
+  		align-items: center;
+      width: 160px;
+
+  		.date_container, .hour_container {
+  			  @extend %fontFamily;
+  				padding: 0 15px;
+  				color: $timeWidgetColor;
+  		}
+
+  		i {
+  			font-size: 25px;
+  			color: $timeWidgetColor;
+  		}
+
+  	}
+  }
+
+}
+
+/* Media query for mobile resolutions */
+
+@media (max-width: 772px) {
+  .pulseHeader {
+    nav {
+      justify-content: center;
+    }
+    .timedate_wrapper {
+      justify-content: center;
+      margin: 15px 0;
+    }
+  }
+}

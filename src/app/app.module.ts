@@ -9,13 +9,15 @@ import { StatusComponent } from './status/status.component';
 import { HttpModule }     from '@angular/http';
 import { MdButtonModule } from '@angular2-material/button';
 import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AvailabilityComponent,
     StatusComponent,
-    FooterComponent
+    FooterComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
