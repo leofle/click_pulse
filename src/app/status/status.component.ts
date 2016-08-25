@@ -11,9 +11,24 @@ import { DataService } from '../data.service';
       </div>
       <div class="services_container">
         <ul>
-          <li><span class="service_unit">Click Field Service Edge:</span><span class="service_unit_status isGood"><i class="material-icons">done</i></span></li>
-          <li><span class="service_unit">Click Field Service Edge:</span><span class="service_unit_status isGood"><i class="material-icons">done</i></span></li>
-          <li><span class="service_unit">Click Field Service Edge:</span><span class="service_unit_status isGood"><i class="material-icons">done</i></span></li>
+          <li>
+            <span class="service_unit">Click Field Service Edge:</span>
+            <span class="service_unit_status isGood">
+              <i class="material-icons">done</i>
+            </span>
+          </li>
+          <li>
+            <span class="service_unit">Click Field Service Edge:</span>
+            <span class="service_unit_status isGood">
+              <i class="material-icons">done</i>
+            </span>
+          </li>
+          <li>
+            <span class="service_unit">Click Field Service Edge:</span>
+            <span class="service_unit_status isGood">
+              <i class="material-icons">done</i>
+            </span>
+          </li>
         </ul>
         <button md-raised-button>more</button>
       </div>
@@ -23,20 +38,20 @@ import { DataService } from '../data.service';
   styleUrls: ['status.component.scss'],
   providers: [DataService]
 })
-export class StatusComponent {
+export class StatusComponent implements OnInit {
 	// getData: string;
-  // items: any;
+  //items: any;
   items:Array<any>;
   constructor(private dataService: DataService) {
     this.items = dataService.getItems();
   }
 
-  // ngOnInit(): void {
-  //   this.dataService.getItems().subscribe(
-  //     data => this.getData = JSON.stringify(data),
-  //     error => alert(error),
-  //     () => console.log(this.getData)
-  //   );
-  // }
+  ngOnInit(): void {
+    // this.dataService.getItems().subscribe(
+    //   data => this.getData = JSON.stringify(data),
+    //   error => alert(error),
+    //   () => console.log(this.getData)
+    // );
+  }
 
 }

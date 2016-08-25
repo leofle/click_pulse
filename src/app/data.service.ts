@@ -28,7 +28,7 @@ export class DataService {
 
   // constructor(private _http: Http) { }
   // getItems() {
-  // return this._http.get("http://jsonplaceholder.typicode.com/users/1")
+  // return this._http.get("http://10.3.9.169:8080/api/pulse")
   //   .map(res => res.json());
   // };
 
