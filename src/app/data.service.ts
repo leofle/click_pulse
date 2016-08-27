@@ -7,28 +7,32 @@ import 'rxjs/Rx';
 export class DataService {
   items:Array<any>;
 
-  constructor() {
-    this.items = [
-      {
-        "name":"Schedule",
-        "status":"done"
-      },{
-        "name":"Mobile",
-        "status":"highlight_off"
-      },{
-        "name":"Integration",
-        "status":"done"
-      }
-    ];
-  }
-
-  getItems() {
+  getItemsMock() {
     return this.items;
   }
 
-  // constructor(private _http: Http) { }
+  constructor(private _http: Http) {
+    this.items = [
+      {
+        "name":"Schedule",
+        "pod":"podev",
+        "status":"done",
+        "timestamp":"1472116500942"
+      },{
+        "name":"Mobile",
+        "pod":"podev",
+        "status":"highlight_off",
+        "timestamp":"1472116500942"
+      },{
+        "name":"Integration",
+        "pod":"podev",
+        "status":"done",
+        "timestamp":"1472116500942"
+      }
+    ];
+  }
   // getItems() {
-  // return this._http.get("http://10.3.9.169:8080/api/pulse")
+  // return this._http.get("http://Yoavs-MacBook.local:8080/api/pulse")
   //   .map(res => res.json());
   // };
 

@@ -39,19 +39,21 @@ import { DataService } from '../data.service';
   providers: [DataService]
 })
 export class StatusComponent implements OnInit {
-	// getData: string;
-  //items: any;
-  items:Array<any>;
+	getData: any;
+  inter: any;
+  items: Array<any>;
   constructor(private dataService: DataService) {
-    this.items = dataService.getItems();
+    this.items = dataService.getItemsMock();
   }
 
   ngOnInit(): void {
     // this.dataService.getItems().subscribe(
     //   data => this.getData = JSON.stringify(data),
     //   error => alert(error),
-    //   () => console.log(this.getData)
+    //   () => this.items = eval(this.getData)
+    //   //() => console.log(eval(this.getData))
     // );
+
   }
 
 }
