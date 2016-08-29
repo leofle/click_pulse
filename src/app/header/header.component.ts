@@ -6,7 +6,7 @@ import { Component, OnInit, ChangeDetectionStrategy, ChangeDetectorRef } from '@
   template: `
   <div class="pulseHeader">
     <h2>{{sub_title}}</h2>
-    <span class="logo_container">
+    <span class="logo_container pulse">
       <i class="material-icons">favorite</i>
     </span>
     <nav>

@@ -8,6 +8,22 @@ $logoColor: #ef6363;
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
+.pulse {
+    animation-name: l;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+    transform-origin: center;
+}
+
+@-webkit-keyframes l {
+    0% {transform: scale(0.5, 0.5); opacity: 0.0;}
+    50% {opacity: 1.0;}
+    100% {transform: scale(1.2, 1.2); opacity: 0.0;}
+}
+
 .pulseHeader {
   display: flex;
 	flex-flow: row wrap;
