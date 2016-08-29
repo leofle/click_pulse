@@ -17,17 +17,20 @@ export class DataService {
         "name":"Schedule",
         "pod":"podev",
         "status":"highlight_off",
-        "timestamp":"1472116500942"
+        "timestamp":"1472116500942",
+        "error_msg":"error message schedule"
       },{
         "name":"Mobile",
         "pod":"podev",
         "status":"highlight_off",
-        "timestamp":"1472116500942"
+        "timestamp":"1472116500942",
+        "error_msg":"error message mobile"
       },{
         "name":"Integration",
         "pod":"podev",
         "status":"done",
-        "timestamp":"1472116500942"
+        "timestamp":"1472116500942",
+        "error_msg":"error message integration"
       }
     ];
   }
