@@ -1,5 +1,6 @@
 $isGood: #64da64;
 $isBad: red;
+$attention: #ffda8f;
 
 .status_wrapper {
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -8,10 +9,30 @@ $isBad: red;
   justify-content: space-around;
   // min-height: calc(100% - 127px);
   // margin-bottom: -100px;
+
   .inner_status {
     flex-grow:  1;
     min-width: 300px;
     //max-width: 555px;
+
+    .error_message {
+      position: relative;
+      background: $attention;
+
+      .close_message {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        cursor:pointer;
+        &:hover {
+          color: $isBad;
+        }
+      }
+      &.showme {
+        display:none;
+      }
+    }
+
      div {
       padding: 25px;
       border-right: 2px solid #ccc;

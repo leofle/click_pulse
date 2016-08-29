@@ -16,7 +16,7 @@ export class DataService {
       {
         "name":"Schedule",
         "pod":"podev",
-        "status":"done",
+        "status":"highlight_off",
         "timestamp":"1472116500942"
       },{
         "name":"Mobile",

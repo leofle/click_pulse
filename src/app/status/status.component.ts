@@ -5,9 +5,15 @@ import { DataService } from '../data.service';
   selector: 'status',
   template: `
   <div class="status_wrapper">
-    <div class="inner_status" *ngFor="let item of items; let i = index;">
+    <div class="inner_status" *ngFor="let item of items; let i = index; trackBy:index;">
       <div class="status_container">
-          <span class="platform_name">Current {{item.name}} Status:</span><i class="material-icons {{item.status}}">{{item.status}}</i>
+          <span class="platform_name">Current {{item.name}} Status:</span><i [class]="'material-icons ' + item.status">{{item.status}}</i>
+      </div>
+      <div class="error_message" [class.showme]="item.showStyle" *ngIf="item.status === 'highlight_off'">
+        <span class="close_message" (click)="item.showStyle = !item.showStyle;">
+          <i class="material-icons">close</i>
+        </span>
+        <span>error message </span>
       </div>
       <div class="services_container">
         <ul>
@@ -42,6 +48,8 @@ export class StatusComponent implements OnInit {
 	getData: any;
   inter: any;
   items: Array<any>;
+  showStyle: Boolean = false;
+
   constructor(private dataService: DataService) {
     this.items = dataService.getItemsMock();
   }
