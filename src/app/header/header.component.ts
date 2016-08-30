@@ -29,7 +29,7 @@ import { Component, OnInit, ChangeDetectionStrategy, ChangeDetectorRef } from '@
 })
 export class HeaderComponent implements OnInit {
 
-  sub_title = 'ClickPulse';
+  sub_title = 'Pulse';
   today: number;
 
   constructor(private ref: ChangeDetectorRef) {

@@ -6,6 +6,8 @@ $logoColor: #ef6363;
 
 %fontFamily {
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeSpeed;
 }
 
 .pulse {
@@ -30,11 +32,13 @@ $logoColor: #ef6363;
   align-items: center;
 	margin: 12px 20px 12px 20px;
 	background: #fff;
+  font-weight: 400;
 
   h2 {
 		flex-grow: 1;
-    font-size: 20px;
-    padding: 20px;
+    font-size: 30px;
+    padding: 10px 0;
+    margin: 0 20px;
   }
 
   h2, a {
@@ -79,7 +83,6 @@ $logoColor: #ef6363;
   	.date_wrapper, .hour_wrapper {
   		display: flex;
   		align-items: center;
-      width: 160px;
 
   		.date_container, .hour_container {
   			  @extend %fontFamily;
@@ -99,7 +102,7 @@ $logoColor: #ef6363;
 
 /* Media query for mobile resolutions */
 
-@media (max-width: 772px) {
+@media (max-width: 699px) {
   .pulseHeader {
     flex-flow: row wrap;
     nav {
