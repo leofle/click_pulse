@@ -24,6 +24,10 @@ $attention: #ffda8f;
       position: relative;
       background: $attention;
 
+      .error_self {
+        color: brown;
+      }
+
       .close_message {
         position: absolute;
         right: 10px;

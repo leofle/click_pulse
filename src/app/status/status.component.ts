@@ -13,7 +13,7 @@ import { DataService } from '../data.service';
         <span class="close_message" (click)="item.showStyle = !item.showStyle;">
           <i class="material-icons">close</i>
         </span>
-        <span>{{ item.error_msg }}</span>
+        <span class="error_self">{{ item.error_msg }}</span>
       </div>
       <div class="services_container">
         <ul>
