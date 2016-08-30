@@ -4,9 +4,14 @@ $attention: #ffda8f;
 
 .status_wrapper {
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 300;
+  text-rendering: optimizeSpeed;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+  max-width: 1753px;
+  margin: 0 auto;
   // min-height: calc(100% - 127px);
   // margin-bottom: -100px;
 
