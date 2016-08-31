@@ -17,22 +17,10 @@ import { DataService } from '../data.service';
       </div>
       <div class="services_container">
         <ul>
-          <li>
-            <span class="service_unit">Click Field Service Edge:</span>
+          <li *ngFor="let region of item.regions;">
+            <span class="service_unit">{{ region.name }}</span>
             <span class="service_unit_status isGood">
-              <i class="material-icons">done</i>
-            </span>
-          </li>
-          <li>
-            <span class="service_unit">Click Field Service Edge:</span>
-            <span class="service_unit_status isGood">
-              <i class="material-icons">done</i>
-            </span>
-          </li>
-          <li>
-            <span class="service_unit">Click Field Service Edge:</span>
-            <span class="service_unit_status isGood">
-              <i class="material-icons">done</i>
+              <i [class]="'material-icons ' + region.status">{{ region.status }}</i>
             </span>
           </li>
         </ul>

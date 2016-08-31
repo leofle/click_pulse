@@ -18,19 +18,52 @@ export class DataService {
         "pod":"podev",
         "status":"highlight_off",
         "timestamp":"1472116500942",
-        "error_msg":"error message schedule"
+        "error_msg":"error message schedule",
+        "regions":[
+          {"name":"U.S",
+            "status":"priority_high"
+          },
+          {"name":"Australia",
+            "status":"done"
+          },
+          {"name":"Europe",
+            "status":"highlight_off"
+          },
+        ]
       },{
         "name":"Mobile",
         "pod":"podev",
-        "status":"highlight_off",
+        "status":"priority_high",
         "timestamp":"1472116500942",
-        "error_msg":"error message mobile"
+        "error_msg":"error message mobile",
+        "regions":[
+          {"name":"U.S",
+            "status":"done"
+          },
+          {"name":"Australia",
+            "status":"highlight_off"
+          },
+          {"name":"Europe",
+            "status":"priority_high"
+          },
+        ]
       },{
         "name":"Integration",
         "pod":"podev",
         "status":"done",
         "timestamp":"1472116500942",
-        "error_msg":"error message integration"
+        "error_msg":"error message integration",
+        "regions":[
+          {"name":"U.S",
+            "status":"done"
+          },
+          {"name":"Australia",
+            "status":"done"
+          },
+          {"name":"Europe",
+            "status":"highlight_off"
+          },
+        ]
       }
     ];
   }

@@ -1,6 +1,19 @@
 $isGood: #64da64;
 $isBad: red;
+$isMedium: gold;
 $attention: #ffda8f;
+
+%colorClass {
+  &.done {
+    color: $isGood;
+  }
+  &.highlight_off {
+    color: $isBad;
+  }
+  &.priority_high {
+    color: $isMedium;
+  }
+}
 
 .status_wrapper {
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -62,12 +75,7 @@ $attention: #ffda8f;
       }
       i {
           font-size: 40px;
-          &.done {
-            color: $isGood;
-          }
-          &.highlight_off {
-            color: $isBad;
-          }
+          @extend %colorClass;
       }
     }
     .services_container {
@@ -85,11 +93,8 @@ $attention: #ffda8f;
               flex-grow: 1;
           }
           .service_unit_status {
-            &.isGood {
-              color: $isGood;
-            }
-            &.isBad {
-              color: $isBad;
+            i{
+              @extend %colorClass;
             }
           }
         }
