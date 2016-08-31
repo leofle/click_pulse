@@ -7,7 +7,8 @@ import { DataService } from '../data.service';
   <div class="status_wrapper">
     <div class="inner_status" *ngFor="let item of items; let i = index; trackBy:index;">
       <div class="status_container">
-          <span class="platform_name">Current {{item.name}} Status:</span><i [class]="'material-icons ' + item.status">{{item.status}}</i>
+          <span class="platform_name">Current {{item.name}} Status:</span>
+            <i [class]="'material-icons ' + item.status">{{item.status}}</i>
       </div>
       <div class="error_message" [class.showme]="item.showStyle" *ngIf="item.status !== 'done' ">
         <span class="close_message" (click)="item.showStyle = !item.showStyle;">
