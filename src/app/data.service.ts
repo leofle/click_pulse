@@ -21,7 +21,7 @@ export class DataService {
         "error_msg":"error message schedule",
         "regions":[
           {"name":"U.S",
-            "status":"priority_high"
+            "status":"warning"
           },
           {"name":"Australia",
             "status":"done"
@@ -33,7 +33,7 @@ export class DataService {
       },{
         "name":"Mobile",
         "pod":"podev",
-        "status":"priority_high",
+        "status":"warning",
         "timestamp":"1472116500942",
         "error_msg":"error message mobile",
         "regions":[
@@ -44,7 +44,7 @@ export class DataService {
             "status":"highlight_off"
           },
           {"name":"Europe",
-            "status":"priority_high"
+            "status":"warning"
           },
         ]
       },{

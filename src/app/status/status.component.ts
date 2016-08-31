@@ -16,12 +16,12 @@ import { DataService } from '../data.service';
         </span>
         <span class="error_self">{{ item.error_msg }}</span>
       </div>
-      <div class="services_container">
+      <div class="regions_container">
         <ul>
           <li *ngFor="let region of item.regions;">
-            <span class="service_unit">{{ region.name }}</span>
-            <span class="service_unit_status isGood">
-              <i [class]="'material-icons ' + region.status">{{ region.status }}</i>
+            <span class="region_unit">{{ region.name }}</span>
+            <span class="region_unit_status isGood">
+              <i [class]="'material-icons ' + region.status" >{{ region.status }}</i>
             </span>
           </li>
         </ul>
@@ -38,6 +38,8 @@ export class StatusComponent implements OnInit {
   inter: any;
   items: Array<any>;
   showStyle: Boolean = false;
+  ismedium: Boolean = false;
+  myregion: string;
 
   constructor(private dataService: DataService) {
     this.items = dataService.getItemsMock();

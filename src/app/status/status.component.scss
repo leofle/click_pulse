@@ -10,7 +10,7 @@ $attention: #ffda8f;
   &.highlight_off {
     color: $isBad;
   }
-  &.priority_high {
+  &.warning {
     color: $isMedium;
   }
 }
@@ -78,7 +78,7 @@ $attention: #ffda8f;
           @extend %colorClass;
       }
     }
-    .services_container {
+    .regions_container {
       display: flex;
       flex-flow: column;
       background: #fff;
@@ -89,10 +89,10 @@ $attention: #ffda8f;
         li {
           display:flex;
           margin: 10px 0;
-          .service_unit {
+          .region_unit {
               flex-grow: 1;
           }
-          .service_unit_status {
+          .region_unit_status {
             i{
               @extend %colorClass;
             }
