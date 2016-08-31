@@ -61,7 +61,7 @@ export class DataService {
             "status":"done"
           },
           {"name":"Europe",
-            "status":"highlight_off"
+            "status":"done"
           },
         ]
       }
