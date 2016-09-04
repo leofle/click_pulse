@@ -1,0 +1,37 @@
+$isGood: #64da64;
+$isBad: red;
+$isMedium: gold;
+
+%colorClass {
+  &.done {
+    color: $isGood;
+  }
+  &.highlight_off {
+    color: $isBad;
+  }
+  &.warning {
+    color: $isMedium;
+  }
+}
+
+.status_container{
+  display:flex;
+  align-items: center;
+  background: #fff;
+  padding: 25px;
+  border-right: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  margin: 30px 20px;
+  transition: all .3s ease;
+  &:hover {
+    -webkit-filter: drop-shadow(#ccc 3px 2px 3px);
+    filter: drop-shadow(#ccc 3px 2px 3px);
+  }
+  .platform_name {
+    flex-grow: 1;
+  }
+  i {
+      font-size: 40px;
+      @extend %colorClass;
+  }
+}

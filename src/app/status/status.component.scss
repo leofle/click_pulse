@@ -1,19 +1,3 @@
-$isGood: #64da64;
-$isBad: red;
-$isMedium: gold;
-$attention: #ffda8f;
-
-%colorClass {
-  &.done {
-    color: $isGood;
-  }
-  &.highlight_off {
-    color: $isBad;
-  }
-  &.warning {
-    color: $isMedium;
-  }
-}
 
 .status_wrapper {
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -32,74 +16,6 @@ $attention: #ffda8f;
     flex-grow:  1;
     min-width: 300px;
     //max-width: 555px;
-
-    .error_message {
-      position: relative;
-      background: $attention;
-
-      .error_self {
-        color: brown;
-      }
-
-      .close_message {
-        position: absolute;
-        right: 10px;
-        top: 10px;
-        cursor:pointer;
-        &:hover {
-          color: $isBad;
-        }
-      }
-      &.showme {
-        display:none;
-      }
-    }
-
-     div {
-      padding: 25px;
-      border-right: 2px solid #ccc;
-      border-bottom: 2px solid #ccc;
-      margin: 30px 20px;
-      transition: all .3s ease;
-      &:hover {
-        -webkit-filter: drop-shadow(#ccc 3px 2px 3px);
-        filter: drop-shadow(#ccc 3px 2px 3px);
-      }
-    }
-    .status_container{
-      display:flex;
-      align-items: center;
-      background: #fff;
-      .platform_name {
-        flex-grow: 1;
-      }
-      i {
-          font-size: 40px;
-          @extend %colorClass;
-      }
-    }
-    .regions_container {
-      display: flex;
-      flex-flow: column;
-      background: #fff;
-      overflow: hidden;
-      ul {
-        padding: 0;
-        list-style-type: none;
-        li {
-          display:flex;
-          margin: 10px 0;
-          .region_unit {
-              flex-grow: 1;
-          }
-          .region_unit_status {
-            i{
-              @extend %colorClass;
-            }
-          }
-        }
-      }
-    }
   }
   &:after {
     content: "";

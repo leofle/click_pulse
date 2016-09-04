@@ -1,0 +1,33 @@
+$isBad: red;
+$attention: #ffda8f;
+
+.error_message {
+  position: relative;
+  background: $attention;
+  padding: 25px;
+  border-right: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  margin: 30px 20px;
+  transition: all .3s ease;
+  &:hover {
+    -webkit-filter: drop-shadow(#ccc 3px 2px 3px);
+    filter: drop-shadow(#ccc 3px 2px 3px);
+  }
+
+  .error_self {
+    color: brown;
+  }
+
+  .close_message {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor:pointer;
+    &:hover {
+      color: $isBad;
+    }
+  }
+  &.showme {
+    display:none;
+  }
+}
