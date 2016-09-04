@@ -11,12 +11,16 @@
     width: calc(100% - 39px);
     height: 300px;
     margin: 30px 20px;
+    .pod_name {
+      padding: 20px;
+      font-size: 20px;
+    }
   }
   .calendar_container {
     display: flex;
     align-items: baseline;
     margin: 15px 30px;
-    .pod_name {
+    .region_name {
       width:200px;
     }
     .pod_calendar {

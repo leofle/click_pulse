@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'region-card',
@@ -12,16 +13,21 @@ import { Component, Input, OnInit } from '@angular/core';
         </span>
       </li>
     </ul>
-    <button md-raised-button>more</button>
+    <button md-raised-button (click)="onSelect(region)">more</button>
   </div>
   `,
   styleUrls: ['region-card.component.scss']
 })
 export class RegionCardComponent implements OnInit {
 @Input() item;
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  onSelect() {
+     this.router.navigate(['/availability', this.item.name]);
+     console.log(this.item.name)
   }
 
 }
