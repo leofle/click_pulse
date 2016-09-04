@@ -1,4 +1,5 @@
 import { Component, OnInit, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
+import { DateComponent } from '../date/date.component';
 
 @Component({
   selector: 'pulse-header',
@@ -14,14 +15,8 @@ import { Component, OnInit, ChangeDetectionStrategy, ChangeDetectorRef } from '@
       <a routerLink="/availability" routerLinkActive="active">availability</a>
     </nav>
     <div class="timedate_wrapper">
-      <div class="date_wrapper">
-        <i class="material-icons">today</i>
-        <span class="date_container">{{today | date}}</span>
-      </div>
-      <div class="hour_wrapper">
-        <i class="material-icons">watch_later</i>
-        <span class="hour_container">{{today | date:'shortTime'}}</span>
-      </div>
+      <pulse-date [timeclass]="isdate" [today]="today" [iconclass]="icondate" [dateformat]=" "></pulse-date>
+      <pulse-date [timeclass]="ishour" [today]="today" [iconclass]="iconhour" [dateformat]="shortdate"></pulse-date>
     </div>
   </div>
   `,
@@ -31,6 +26,12 @@ export class HeaderComponent implements OnInit {
 
   sub_title = 'Pulse';
   today: number;
+  date: number;
+  isdate: string = 'date';
+  ishour: string = 'hour';
+  icondate: string = 'today';
+  iconhour: string = 'watch_later';
+  shortdate: string = 'shortTime';
 
   constructor(private ref: ChangeDetectorRef) {
       // ref.detach();

@@ -11,6 +11,7 @@ import { MdButtonModule } from '@angular2-material/button';
 import { MdCardModule } from '@angular2-material/card';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+import { DateComponent } from './date/date.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HeaderComponent } from './header/header.component';
     AvailabilityComponent,
     StatusComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    DateComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,23 @@
+$timeWidgetColor: #929292;
+
+%fontFamily {
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeSpeed;
+}
+
+.date_wrapper, .hour_wrapper {
+  display: flex;
+  align-items: center;
+
+  .date_container, .hour_container {
+      @extend %fontFamily;
+      padding: 0 15px;
+      color: $timeWidgetColor;
+  }
+
+  i {
+    font-size: 25px;
+    color: $timeWidgetColor;
+  }
+}

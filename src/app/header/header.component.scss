@@ -79,23 +79,6 @@ $logoColor: #ef6363;
   	flex-grow:5;
   	justify-content: flex-end;
   	padding: 10px;
-
-  	.date_wrapper, .hour_wrapper {
-  		display: flex;
-  		align-items: center;
-
-  		.date_container, .hour_container {
-  			  @extend %fontFamily;
-  				padding: 0 15px;
-  				color: $timeWidgetColor;
-  		}
-
-  		i {
-  			font-size: 25px;
-  			color: $timeWidgetColor;
-  		}
-
-  	}
   }
 
 }
