@@ -16,7 +16,7 @@ export class DataService {
       {
         "name":"Schedule",
         "pod":"podev",
-        "status":"highlight_off",
+        "status":"warning",
         "timestamp":"1472116500942",
         "error_msg":"error message schedule",
         "regions":[
