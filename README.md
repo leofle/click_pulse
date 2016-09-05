@@ -1,4 +1,5 @@
 # ClickPulse
+[![dependencies](https://david-dm.org/leofle/click_pulse.svg)](https://david-dm.org/leofle/click_pulse)
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.11-webpack.2.
 
