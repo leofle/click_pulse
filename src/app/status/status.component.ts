@@ -10,7 +10,7 @@ import { RegionCardComponent } from '../region-card/region-card.component';
   <div class="status_wrapper">
     <div class="inner_status" *ngFor="let item of items; let i = index; trackBy:index;">
       <card-status [item]="item"></card-status>
-      <error-card [item]="item"></error-card>
+      <error-card [item]="item" *ngIf="item.status !== 'done' "></error-card>
       <region-card [item]="item"></region-card>
     </div>
   </div>

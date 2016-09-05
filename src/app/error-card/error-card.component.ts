@@ -3,7 +3,7 @@ import { Component, Input, OnInit } from '@angular/core';
 @Component({
   selector: 'error-card',
   template: `
-  <div class="error_message" [class.showme]="item.showStyle" *ngIf="item.status !== 'done' ">
+  <div class="error_message" [class.showme]="item.showStyle">
     <span class="close_message" (click)="item.showStyle = !item.showStyle;">
       <i class="material-icons">close</i>
     </span>
