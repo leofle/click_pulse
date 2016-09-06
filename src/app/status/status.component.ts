@@ -1,11 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
-import { CardStatusComponent } from '../card-status/card-status.component';
-import { ErrorCardComponent } from '../error-card/error-card.component';
-import { RegionCardComponent } from '../region-card/region-card.component';
 
 @Component({
-  selector: 'status',
+  selector: 'pulse-status',
   template: `
   <div class="status_wrapper">
     <div class="inner_status" *ngFor="let item of items; let i = index; trackBy:index;">
@@ -19,7 +16,7 @@ import { RegionCardComponent } from '../region-card/region-card.component';
   providers: [DataService]
 })
 export class StatusComponent implements OnInit {
-	getData: any;
+  getData: any;
   inter: any;
   items: Array<any>;
   showStyle: Boolean = false;

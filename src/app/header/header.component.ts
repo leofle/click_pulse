@@ -1,5 +1,4 @@
 import { Component, OnInit, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
-import { DateComponent } from '../date/date.component';
 
 @Component({
   selector: 'pulse-header',

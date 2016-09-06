@@ -1,9 +1,9 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs/Subscription';
 
 @Component({
-  selector: 'availability',
+  selector: 'pulse-availability',
   template: `
   <div class="availability_wrapper">
     <div class="inner_availability">
@@ -18,38 +18,44 @@ import { Subscription } from 'rxjs/Subscription';
   </div>`,
   styleUrls: ['availability.component.scss']
 })
-export class AvailabilityComponent implements OnInit ,OnDestroy{
-  podim:Array<any>;
+export class AvailabilityComponent implements OnInit, OnDestroy {
+  podim: Array<any>;
   private sub: Subscription;
-  constructor(private route: ActivatedRoute){
+  constructor(private route: ActivatedRoute) {
     this.podim = [
       {
-      "region_name":"U.S",
-      "capacity":{"dates":[
-        {"today":"done"}
-      ]}
-    },
-    {
-    "region_name":"Europe",
-      "capacity":{"dates":[
-        {"today":"done"}
-      ]}
-    },
-    {
-    "region_name":"Australia",
-      "capacity":{"dates":[
-        {"today":"done"}
-      ]}
-    }
-  ]
+        'region_name': 'U.S',
+        'capacity': {
+          'dates': [
+            { 'today': 'done' }
+          ]
+        }
+      },
+      {
+        'region_name': 'Europe',
+        'capacity': {
+          'dates': [
+            { 'today': 'done' }
+          ]
+        }
+      },
+      {
+        'region_name': 'Australia',
+        'capacity': {
+          'dates': [
+            { 'today': 'done' }
+          ]
+        }
+      }
+    ];
 
   }
 
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
-     let name = params['name'];
-     console.log(this.route.params)
-   });
+      // let name = params['name'];
+      console.log(this.route.params);
+    });
   }
 
   ngOnDestroy() {

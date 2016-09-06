@@ -27,7 +27,7 @@ export class RegionCardComponent implements OnInit {
 
   onSelect() {
      this.router.navigate(['/availability', this.item.name]);
-     console.log(this.item.name)
+     console.log(this.item.name);
   }
 
 }

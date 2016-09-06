@@ -5,7 +5,7 @@ import { DebugElement } from '@angular/core';
 import { addProviders, async, inject } from '@angular/core/testing';
 import { StatusComponent } from './status.component';
 
-describe('Component: StatusComponent', () => {
+describe('Component: Status', () => {
   it('should create an instance', () => {
     let component = new StatusComponent();
     expect(component).toBeTruthy();
