@@ -10,4 +10,4 @@ describe('Component: ErrorCard', () => {
     let component = new ErrorCardComponent();
     expect(component).toBeTruthy();
   });
-});
+}); 
