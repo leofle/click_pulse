@@ -14,6 +14,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  title = 'clicksoftware2';
+  title = 'clicksoftware';
 
 }
