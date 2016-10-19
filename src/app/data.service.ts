@@ -45,11 +45,11 @@ export class DataService {
           },
           {
             'name': 'Australia',
-            'status': 'highlight_off'
+            'status': 'warning'
           },
           {
             'name': 'Europe',
-            'status': 'warning'
+            'status': 'done'
           },
         ]
       }, {
