@@ -1,5 +1,5 @@
 $isBad: red;
-$attention: #ffda8f;
+$attention: #f67975;
 
 .error_message {
   position: relative;
@@ -15,7 +15,8 @@ $attention: #ffda8f;
   }
 
   .error_self {
-    color: brown;
+    color: white;
+    font-weight: 400;
   }
 
   .close_message {
@@ -23,6 +24,8 @@ $attention: #ffda8f;
     right: 10px;
     top: 10px;
     cursor:pointer;
+    color:white;
+    transition: all .3s ease;
     &:hover {
       color: $isBad;
     }
