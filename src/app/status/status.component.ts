@@ -24,17 +24,14 @@ export class StatusComponent implements OnInit {
   myregion: string;
 
   constructor(private dataService: DataService) {
-    this.items = dataService.getItemsMock();
-  }
-
-  ngOnInit(): void {
-    // this.dataService.getItems().subscribe(
-    //   data => this.getData = JSON.stringify(data),
-    //   error => alert(error),
-    //   () => this.items = eval(this.getData)
-    //   //() => console.log(eval(this.getData))
-    // );
+    this.dataService.getItems().subscribe(
+      items => this.items = items,
+      error => console.error('Error: ' + error),
+      () => console.log('Completed!' + this.items)
+    );
 
   }
+
+  ngOnInit(){}
 
 }
